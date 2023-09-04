@@ -16,7 +16,7 @@
             <span class="logo_text">Digital Agency</span>
         </div>
         <nav class="header_nav">
-            <div class="nav_burger"></div>
+            <input type="checkbox" class="nav_burger">
             <ul class="nav_list disable-menu">
                 <li><a href="#inicio" class="list-item_link">Home</a></li>
                 <li><a href="#about" class="list-item_link">About</a></li>
@@ -106,14 +106,6 @@
             </ul>
         </div>
     </footer>
-    <script>
-        const menu = document.querySelector(".nav_burger")
-        menu.addEventListener("click",()=>{
-            const list =document.querySelector(".nav_list")
-            list.classList.toggle("disable-menu")
-            menu.classList.toggle("icon-x")
-           
-        })
-    </script>
+
 </body>
 </html>

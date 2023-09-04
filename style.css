@@ -201,9 +201,11 @@ h1, p, span{
 .footer-sections_list li a{
     font-weight: 300;
 }
+.nav_burger{
+    appearance:unset;
+}
 
 /* ANIMACIONES */
-
 .btn:hover{
     background-color: var(--color-verde);
 }
@@ -236,22 +238,26 @@ h1, p, span{
     .header{
         padding: 1.5rem;
     }
-   
+    .header_nav{
+        position: relative;
+    }
     .nav_list{
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px;
-        z-index: 9;
+        top: -1.3rem;
+        right: -1.3rem;
+        z-index: 7;
         background-color: var(--blue-marine);
         width: 150px;
         gap: 2rem;
-        padding: 1.5rem;
-        animation-name: slideIn;
+        padding: 2rem 1.5rem;
+        animation-name: desliar;
         animation-duration: 0.5s;
         animation-timing-function: ease-in-out;
+        border-radius: 20px 0 0 20px;
     }
-    @keyframes slideIn {
+    @keyframes deslizar {
         from {
             transform: translateX(130%);
         }
@@ -261,19 +267,23 @@ h1, p, span{
     }
     .disable-menu{
         display: none;
-
     }
 
-    
     .nav_burger{
-        background-image: url(./img/icon-menu.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
+        content: url(./img/icon-menu.svg);
         height: 40px;
         width: 40px;
+        position: absolute;
+        border: none;
+        appearance:unset;
     }
-    .icon-x{
-        background-image: url(./img/icon-cancelar.svg);
+    .nav_burger:checked{
+        content: url(./img/icon-cancelar.svg);
+        right: -1rem;
+        z-index: 9;
+    }
+    .nav_burger:checked + .nav_list{
+        display: flex;
     }
     .item_link{
         font-size: 1.2rem;
