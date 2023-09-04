@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Digital Agency</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <span class="logo_text">Digital Agency</span>
+        </div>
+        <nav class="header_nav">
+            <div class="nav_burger"></div>
+            <ul class="nav_list disable-menu">
+                <li><a href="#inicio" class="list-item_link">Home</a></li>
+                <li><a href="#about" class="list-item_link">About</a></li>
+                <li><a href="#partners" class="list-item_link">Partners</a></li>
+                <li><a href="#contact" class="list-item_link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-section" id="home">
+            <div class="home_info">
+                <h1 class="home-info_title">Building digital products, brands & experience</h1>
+                <p class="home-info_description">Digital Agency is your online team mangement tool that easy and prompt</p>
+                <a href="" class="btn">contact us</a>
+            </div>
+            <div class="home_img img-section">
+                <img src="./img/business-deal.png" alt="Business-deal">
+            </div>
+        </section>
+        <section class="section-companies" id="partners">
+            <p>Trusted by 4,000+ companies</p>
+            <ul class="companies_list">
+                <li><img src="./img/Spotify.png" alt="Logo Spotify"></li>
+                <li><img src="./img/Slack.png" alt="Logo Slack"></li>
+                <li><img src="./img/DropBox.png" alt="logo DropBox"></li>
+                <li><img src="./img/Zoom.png" alt="Logo zoom"></li>
+            </ul>
+        </section>
+        <section class="container-section section-branding" id="about">
+            <div class="container-info branding_info">
+                <h1 class="info_title">Branding & Design system</h1>
+                <p class="info_description">Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups</p>
+            </div>
+            <div class="branding_img img-section">
+                <img src="./img/designer-team-working-on-creative-design.png" alt="team working">
+            </div>
+        </section>
+        <section class="container-section section-custome">
+            <div class="container-info custome_info">
+                <h1 class="info_title">Custome & Plugin Development</h1>
+                <p class="info_description">Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups</p>
+            </div>
+            <div class="custome_img img-section">
+                <img src="./img/businessman-analyzing-data.png" alt="Businnessman Analyzing">
+            </div>
+        </section>
+        <section id="contact" class="container-section section-contact">
+            <div class="container-info contact-container_info">
+                <h1 class="info_title">Custome & Plugin Development</h1>
+                <p class="info_description">Commonly used in the graphic, print & publishing industris for previewing visual layout and mockups</p>
+                <a href="" class="btn">contact us</a>
+            </div>
+            <div class="contact_img">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_logo">
+            <span class="title-footer">Digital Agency</span>
+            <p>Building digital products, brands & experience</p>
+        </div>
+        <div class="footer_sections">
+            <span class="title-footer">Resources</span>
+            <ul class="footer-sections_list">
+                <li><a href="" class="list-item_link">Guides</a></li>
+                <li><a href="" class="list-item_link">Blog</a></li>
+                <li><a href="" class="list-item_link">Customer Stories</a></li>
+                <li><a href="" class="list-item_link">Glossery</a></li>
+            </ul>
+        </div>
+        <div class="footer_sections">
+            <span class="title-footer">Company</span>
+            <ul class="footer-sections_list">
+                <li><a href="#home" class="list-item_link">Home</a></li>
+                <li><a href="#about" class="list-item_link">About</a></li>
+                <li><a href="#partners" class="list-item_link">Partners</a></li>
+                <li><a href="#contact" class="list-item_link">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer_sections">
+            <span class="title-footer">Social Media</span>
+            <ul class="footer-sections_list">
+                <li><a href="" class="list-item_link">Linkedin</a></li>
+                <li><a href="" class="list-item_link">Facebook</a></li>
+                <li><a href="" class="list-item_link">Instagram</a></li>
+                <li><a href="" class="list-item_link">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        const menu = document.querySelector(".nav_burger")
+        menu.addEventListener("click",()=>{
+            const list =document.querySelector(".nav_list")
+            list.classList.toggle("disable-menu")
+            menu.classList.toggle("icon-x")
+           
+        })
+    </script>
+</body>
+</html>
